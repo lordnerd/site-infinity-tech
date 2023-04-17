@@ -1,0 +1,21 @@
+#prestacao-servicos-section{
+  height: 400.5px;
+}
+
+.prestacao-servicos > h1{
+  padding-top: 90px;
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  font-size: 60px;
+  color: #15CBCA;
+}
+
+.prestacao-servicos > p{
+  padding-top: 30px;
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-size: 27px;
+  margin-left: 400px;
+  max-width: 1000px;
+}
