@@ -1,0 +1,29 @@
+<main>
+
+	<section id="section-login">
+		<h2 style="margin-left: 130px; font-family: 'Segoe UI'; color: #15CBCA;">Login</h2>
+
+		<br>
+
+		<form class="row g-3">
+
+				<label for="staticUsuario" class="visually-hidden">Usuário</label>
+				<input type="text" name="usuario" [(ngModel)] = "usuario" class="form-control" id="staticUsuario" placeholder="e-mail ou CPF">
+
+	  	<br>
+
+				<label for="inputPassword2" class="visually-hidden">Senha</label>
+				<input type="password" name="senha" [(ngModel)] = "senha" class="form-control" id="inputPassword2" placeholder="senha">
+
+			<br>
+				<div class="buttons">
+					<button type="submit" class="btn btn-primary mb-3" routerLink="/cadastro" style="width: 150px; background-color: red;">Cadastro</button>
+				  <button type="submit" class="btn btn-primary mb-3" (click)="fazerLogin()" style="width: 150px;">Login</button>
+				</div>
+
+
+		</form>
+	</section>
+
+</main>
+

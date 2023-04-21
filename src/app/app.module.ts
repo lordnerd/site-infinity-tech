@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 /*Importações do Angular Material*/
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -12,24 +14,41 @@ import { MatDividerModule } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MenuComponent } from './menu/menu.component';
 import { InicioComponent } from './inicio/inicio.component';
-import { QuemSomosComponent } from './inicio/quem-somos/quem-somos.component';
-import { ParaQuemComponent } from './inicio/para-quem/para-quem.component';
-import { BannerComponent } from './inicio/banner/banner.component';
-import { PrestacaoServicosComponent } from './inicio/prestacao-servicos/prestacao-servicos.component';
 import { RodapeComponent } from './rodape/rodape.component';
+import { PortalComponent } from './portal/portal.component';
+import { MenuPortalComponent } from './portal/menu-portal/menu-portal.component';
+import { CardComponent } from './portal/card/card.component';
+import { LoginComponent } from './login/login.component';
+import { RestritoComponent } from './restrito/restrito.component';
+import { AtualizaCardComponent } from './restrito/atualiza-card/atualiza-card.component';
+import { CadastrarCardComponent } from './restrito/cadastrar-card/cadastrar-card.component';
+import { ListaServicoComponent } from './restrito/lista-servico/lista-servico.component';
+import { MenuRestritoComponent } from './restrito/menu-restrito/menu-restrito.component';
+
+import { CardService } from './card.service';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { AtualizarCadastroComponent } from './cadastro/atualizar-cadastro/atualizar-cadastro.component';
+import { ListaCadastroComponent } from './cadastro/lista-cadastro/lista-cadastro.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
     InicioComponent,
-    QuemSomosComponent,
-    ParaQuemComponent,
-    BannerComponent,
-    PrestacaoServicosComponent,
     RodapeComponent,
+    PortalComponent,
+    MenuPortalComponent,
+    CardComponent,
+    LoginComponent,
+    RestritoComponent,
+    AtualizaCardComponent,
+    CadastrarCardComponent,
+    ListaServicoComponent,
+    MenuRestritoComponent,
+    CadastroComponent,
+    AtualizarCadastroComponent,
+    ListaCadastroComponent,
   ],
   imports: [
     BrowserAnimationsModule,
@@ -40,9 +59,12 @@ import { RodapeComponent } from './rodape/rodape.component';
     MatButtonModule,
     MatCardModule,
     MatGridListModule,
-    MatDividerModule
+    MatDividerModule,
+		FormsModule,
+		ReactiveFormsModule,
+		HttpClientModule
   ],
-  providers: [],
+  providers: [CardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

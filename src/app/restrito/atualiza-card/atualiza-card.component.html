@@ -1,0 +1,29 @@
+<main>
+	<h1>Atualiza card</h1>
+	<section id="section-cadastro">
+		<form *ngIf = "card">
+			<label for="card">Id</label>
+			<input type="text" class="form-control" name="id" [(ngModel)]="card.id" readonly/>
+			<br />
+			<label for="servico">Serviço oferecido</label>
+			<input type="text" class="form-control" name="servico" [(ngModel)]="card.servico"/>
+			<br />
+			<label for="dataCriacao">Data de Criação</label>
+			<input type="text" class="form-control" name="dataCriacao" [(ngModel)]="card.dataCriacao"/>
+			<br />
+			<label for="sede">Sede</label>
+			<input type="text" class="form-control" name="sede" [(ngModel)]="card.sede"/>
+			<br />
+			<label for="localidade">Localidade</label>
+			<input type="text" class="form-control" name="localidade" [(ngModel)]="card.localidade"/>
+			<br />
+			<label for="descricao">Descricão</label>
+			<input type="text" class="form-control" name="descricao" [(ngModel)]="card.descricao"/>
+			<br />
+			<label for="horarioFuncionamento">Horário de Funcionamento</label>
+			<input type="text" class="form-control" name="horarioFuncionamento" [(ngModel)]="card.horarioFuncionamento"/>
+			<br />
+			<button type="submit" class="btn btn-primary mb3" (click)="atualizar(card.id)">Atualizar</button>
+		</form>
+	</section>
+</main>

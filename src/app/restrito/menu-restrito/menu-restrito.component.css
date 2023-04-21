@@ -1,0 +1,26 @@
+.button-spacer {
+  flex: 1 1 auto;
+}
+
+.logo-spacer{
+  flex: 0.02 0.02 auto;
+}
+
+mat-toolbar{
+  background-color: #3F51B5;
+  height: 156px;
+}
+
+img{
+  height: 50px;
+  width: 50px;
+}
+
+span{
+  padding: 8px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}

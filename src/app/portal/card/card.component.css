@@ -1,0 +1,13 @@
+#card-row{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 70%;
+	gap: 10px;
+}
+
+.example-card {
+  width: 453.33px;
+	min-height: 294.71px;
+	margin-left: 8px;
+}
+

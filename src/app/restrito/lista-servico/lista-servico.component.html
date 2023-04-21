@@ -1,0 +1,40 @@
+<table class="table">
+	<thead>
+		<tr>
+			<th scope="col">Id</th>
+			<th scope="col">Serviço</th>
+			<th scope="col">Data de Criação</th>
+			<th scope="col">Sede</th>
+			<th scope="col">Localidade</th>
+			<th scope="col">Descrição</th>
+			<th scope="col">Horário de Funcionamento</th>
+			<th scope="col">Editar</th>
+			<th scope="col">Excluir</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let c of cards">
+			<th scope="row">{{ c.id }}</th>
+			<td>{{ c.servico }}</td>
+			<td>{{ c.dataCriacao }}</td>
+			<td>{{ c.sede }}</td>
+			<td>{{ c.localidade }}</td>
+			<td>{{ c.descricao }}</td>
+			<td>{{ c.horarioFuncionamento }}</td>
+			<td>
+				<a
+					class="btn btn-primary"
+					routerLink="/restrito/editar/{{ c.id }}"
+					role="button"
+					>Editar</a
+				>
+			</td>
+			<td>
+				<a class="btn btn-danger" (click)="excluir(c.id)" role="button"
+					>Excluir</a
+				>
+			</td>
+		</tr>
+	</tbody>
+</table>
+

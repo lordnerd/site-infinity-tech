@@ -1,0 +1,58 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "servico": "Terapia",
+      "dataCriacao": "Criado em: 18/04/2023",
+      "sede": "TERAPIA",
+      "localidade": "Recife",
+      "descricao": "Oferecemos serviço de terapia gratuito em Recife",
+      "horarioFuncionamento": "Horário de funcionamento: 08:00 às 23:00"
+    },
+    {
+      "id": 2,
+      "servico": "Medicina Veterinária",
+      "dataCriacao": "Criado em: 21/04/2023",
+      "sede": "ANIMALS CARE",
+      "localidade": "Piedade",
+      "descricao": "Oferecemos serviço de medicina veterinária gratuito em Piedade",
+      "horarioFuncionamento": "Horário de funcionamento: 09:00 às 23:00"
+    },
+    {
+      "id": 3,
+      "servico": "Fonoaudiologia",
+      "dataCriacao": "Criado em: 21/04/2023",
+      "sede": "FONO",
+      "localidade": "Boa Vista",
+      "descricao": "Oferecemos serviço de fonoaudiologia gratuito na Boa Vista",
+      "horarioFuncionamento": "Horário de funcionamento: 07:00 às 21:00"
+    },
+    {
+      "id": 4,
+      "servico": "Psicologia",
+      "dataCriacao": "Criado em: 21/04/2023",
+      "sede": "MIND CARE",
+      "localidade": "Recife",
+      "descricao": "Oferecemos serviço de psicologia gratuito em Recife",
+      "horarioFuncionamento": "Horário de Funcionamento: 08:00 às 23:00"
+    },
+    {
+      "id": 5,
+      "servico": "Cardiologia",
+      "dataCriacao": "Criado em: 21/04/2023",
+      "sede": "Health Care",
+      "localidade": "Jaboatão dos Guararapes",
+      "descricao": "Oferecemos serviço de cardiologia gratuito em Recife",
+      "horarioFuncionamento": "Horário de Funcionamento: 08:00 às 23:00"
+    },
+    {
+      "id": 6,
+      "servico": "Pediatria Infantil",
+      "dataCriacao": "Criado em: 21/04/2023",
+      "sede": "KIDS CARE",
+      "localidade": "Prazeres",
+      "descricao": "Oferecemos serviço de pediatria infantil gratuito em Recife",
+      "horarioFuncionamento": "Horário de Funcionamento: 07:00 às 22:00"
+    }
+  ]
+}

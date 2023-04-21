@@ -1,0 +1,79 @@
+<main>
+	<section id="section-card" style="min-height: 1000px; min-width: 1000px;">
+		<div class="cards" style="margin-top: 100px; margin-left: 200px">
+			<nav id="card-row">
+				<mat-card
+					class="example-card"
+					style="border-radius: 30px"
+					*ngFor="let c of cards"
+				>
+					<mat-card-header>
+						<mat-card-title
+							style="
+								font-family: 'Segoe UI';
+								color: #15cbca;
+								display: grid;
+								grid-template-columns: 1fr 1fr;
+								gap: 300px;
+							"
+						>
+							<p style="font-weight: bold">{{ c.servico }}</p>
+						</mat-card-title>
+						<mat-card-subtitle>{{ c.dataCriacao }}</mat-card-subtitle>
+					</mat-card-header>
+					<mat-card-content
+						style="display: flex; flex-direction: row; margin-left: 5px"
+					>
+						<img
+							src="./assets/img/sedeicon.png"
+							alt=""
+							style="
+								width: 16px;
+								height: 22px;
+								margin-left: 10px;
+								margin-top: 4px;
+							"
+						/>
+						<p style="font-family: 'Segoe UI'; color: #626062">{{ c.sede }}</p>
+						<img
+							src="./assets/img/localizacao.png"
+							alt=""
+							style="
+								width: 16px;
+								height: 22px;
+								margin-left: 22px;
+								margin-bottom: 2px;
+							"
+						/>
+						<p style="font-family: 'Segoe UI'; color: #626062">
+							{{ c.localidade }}
+						</p>
+					</mat-card-content>
+					<mat-card-content>
+						<p
+							style="
+								font-family: 'Segoe UI';
+								margin-left: 15px;
+								font-size: 16px;
+							"
+						>
+							{{ c.descricao }}
+						</p>
+						<p
+							style="
+								font-family: 'Segoe UI';
+								margin-left: 15px;
+								font-size: 16px;
+								color: #15cbca;
+								margin-top: 60px;
+								font-weight: bold;
+							"
+						>
+							{{ c.horarioFuncionamento }}
+						</p>
+					</mat-card-content>
+				</mat-card>
+			</nav>
+		</div>
+	</section>
+</main>

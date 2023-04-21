@@ -1,0 +1,21 @@
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 50px;
+	min-height: 700px;
+}
+
+#section-login {
+	height: 100%;
+	width: 400px;
+	border-radius: 10px;
+	border: 2px solid black;
+	padding: 10px 20px;
+}
+
+.buttons{
+	margin-left: 15px;
+	display: flex;
+	gap: 20px;
+}

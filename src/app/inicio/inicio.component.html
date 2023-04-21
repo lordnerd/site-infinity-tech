@@ -1,5 +1,85 @@
-<app-banner></app-banner>
-<app-quem-somos></app-quem-somos>
-<app-para-quem></app-para-quem>
-<app-prestacao-servicos></app-prestacao-servicos>
-<router-outlet></router-outlet>
+<main>
+	<section id="menu">
+		<p>
+			<mat-toolbar>
+				<span><img src="./assets/img/logo.png" alt=""></span>
+				<span class="logo-spacer"></span>
+				<span><a routerLink='' style="font-family: 'Segoe UI'; font-size: 24px;">Free Social Services</a></span>
+				<span class="button-spacer"></span>
+				<span><a routerLink="/portal"><button mat-raised-button color="primary" style="border-radius: 60px; background-color: #15CBCA; color: white;">Entrar no site</button></a></span>
+			</mat-toolbar>
+		</p>
+	</section>
+
+  <section id="section-banner">
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/banner1.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/banner2.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/banner3.png" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+	<section id="quem-somos-section">
+		<div class="quem-somos">
+			<h1>Quem somos?</h1>
+			<p>
+				Somos do grupo Infinity Tech e este é o portal Free Social Services, que
+				tem como objetivo divulgar serviços voluntários no ramo da saúde. Nosso
+				portal visa democratizar o acesso a sáude para as pessoas que mais
+				precisam.
+			</p>
+		</div>
+	</section>
+
+	<section id="para-quem-section">
+    <div class="para-empresas-ongs">
+      <h1>Para ONG's e profissionais voluntários</h1>
+      <p>
+        Quer divulgar seu serviço em nosso portal? <strong>Nós exibimos na plataforma</strong> os
+        serviços prestados por ONG's e profissionais voluntários voltados para saúde. Cadastre-se e divulgue
+        seu serviço gratuito aqui!
+      </p>
+      <span style="margin-left: 630px;"><a href="/login"><button mat-raised-button color="primary" style="padding-top: 10px; padding-bottom: 10px; font-family: 'Segoe UI'; font-size: 20px; border-radius: 60px; background-color: #15CBCA; color: white;">Entrar no portal para ONGs e profissionais voluntários</button></a></span>
+    </div>
+  </section>
+
+	<section id="prestacao-servicos-section">
+		<div class="prestacao-servicos">
+			<h1>Prestação de serviços para saúde</h1>
+			<p>
+				Está em busca de um serviço de saúde voluntário? Nosso site divulga os serviços voluntários mais próximos, tudo com a facilidade de um clique! Agora ficou muito mais fácil cuidar da sua sáude.
+			</p>
+		</div>
+	</section>
+
+</main>

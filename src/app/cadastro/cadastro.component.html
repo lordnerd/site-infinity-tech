@@ -1,0 +1,106 @@
+<main>
+	<h1>Cadastrar usuário</h1>
+	<section id="section-cadastro">
+		<form>
+			<div class="col-auto">
+				<label for="cnpj">CNPJ</label>
+				<input
+					type="text"
+					class="form-control"
+					name="cnpj"
+					[(ngModel)]="cadastro.cnpj"
+				/>
+
+				<label for="telefone">Telefone</label>
+				<input
+					type="text"
+					class="form-control"
+					name="telefone"
+					[(ngModel)]="cadastro.telefone"
+				/>
+			</div>
+			<br />
+			<div class="col-auto">
+				<label for="nomeFantasia">Nome Fantasia</label>
+				<input
+					type="text"
+					class="form-control"
+					name="nomeFantasia"
+					[(ngModel)]="cadastro.nomeFantasia"
+				/>
+
+				<label for="endereco">Endereço</label>
+				<input
+					type="text"
+					class="form-control"
+					name="endereco"
+					[(ngModel)]="cadastro.endereco"
+				/>
+			</div>
+			<br />
+			<div class="col-auto">
+				<label for="sede">Nome Responsável</label>
+				<input
+					type="text"
+					class="form-control"
+					name="nomeResponsavel"
+					[(ngModel)]="cadastro.nomeResponsavel"
+				/>
+
+				<label for="senha">Senha</label>
+				<input
+					type="password"
+					class="form-control"
+					name="senha"
+					[(ngModel)]="cadastro.senha"
+				/>
+			</div>
+			<br />
+			<div class="col-auto">
+				<label for="nomeOng">Nome da Ong</label>
+				<input
+					type="text"
+					class="form-control"
+					name="nomeOng"
+					[(ngModel)]="cadastro.nomeOng"
+				/>
+				<label for="confirmaSenha">Confirmar Senha</label>
+				<input
+					type="password"
+					class="form-control"
+					name="confirmaSenha"
+					[(ngModel)]="cadastro.confirmaSenha"
+				/>
+			</div>
+			<br />
+			<div class="col-auto">
+				<label for="servicoOferecido">Serviço Oferecido</label>
+				<input
+					type="text"
+					class="form-control"
+					name="servicoOferecido"
+					[(ngModel)]="cadastro.servicoOferecido"
+				/>
+
+				<label for="email">E-mail</label>
+				<input
+					type="text"
+					class="form-control"
+					name="email"
+					[(ngModel)]="cadastro.email"
+				/>
+			</div>
+			<br />
+			<div class="col-auto">
+				<button
+					type="button"
+					class="btn btn-primary mb-3"
+					(click)="cadastrarUsuario()"
+				>
+					Cadastrar
+				</button>
+			</div>
+		</form>
+	</section>
+</main>
+

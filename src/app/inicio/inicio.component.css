@@ -1,4 +1,106 @@
+main{
+  min-height: 500px;
+}
+
+.button-spacer {
+  flex: 1 1 auto;
+}
+
+.logo-spacer{
+  flex: 0.02 0.02 auto;
+}
+
+mat-toolbar{
+  background-color: #3F51B5;
+  height: 156px;
+}
+
+img{
+  height: 50px;
+  width: 50px;
+}
+
+span{
+  padding: 8px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
 
 
 
+#section-banner{
+  min-height: 400px;
+}
 
+#section-banner img{
+  height: 764.7px;
+}
+
+#quem-somos-section{
+  height: 281.5px;
+}
+
+.quem-somos > h1{
+  padding-top: 90px;
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  font-size: 60px;
+  color: #15CBCA;
+}
+
+.quem-somos > p{
+  padding-top: 30px;
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-size: 27px;
+  margin-left: 400px;
+  max-width: 1000px;
+}
+
+#para-quem-section{
+  height: 450.25px
+}
+
+.para-empresas-ongs > h1{
+  padding-top: 160px;
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  font-size: 60px;
+  color: #15CBCA;
+}
+
+.para-empresas-ongs > p{
+  padding-top: 30px;
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-size: 27px;
+  margin-left: 400px;
+  max-width: 1000px;
+}
+
+#prestacao-servicos-section{
+  height: 400.5px;
+}
+
+.prestacao-servicos > h1{
+  padding-top: 90px;
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  font-size: 60px;
+  color: #15CBCA;
+}
+
+.prestacao-servicos > p{
+  padding-top: 30px;
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-size: 27px;
+  margin-left: 400px;
+  max-width: 1000px;
+}

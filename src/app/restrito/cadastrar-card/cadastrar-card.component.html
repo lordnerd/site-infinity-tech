@@ -1,0 +1,77 @@
+<main>
+	<h1>Cadastrar serviço</h1>
+	<section id="section-cadastro">
+		<form>
+			<div class="col-auto">
+				<label for="servico">Nome do serviço</label>
+				<input
+					type="text"
+					class="form-control"
+					name="servico"
+					[(ngModel)]="card.servico"
+				/>
+			</div>
+			<br />
+			<div class="col-auto">
+				<label for="dataCriacao">Data de Criação</label>
+				<input
+					type="text"
+					class="form-control"
+					name="dataCriacao"
+					[(ngModel)]="card.dataCriacao"
+				/>
+			</div>
+			<br />
+			<div class="col-auto">
+				<label for="sede">Sede</label>
+				<input
+					type="text"
+					class="form-control"
+					name="sede"
+					[(ngModel)]="card.sede"
+				/>
+			</div>
+			<br />
+			<div class="col-auto">
+				<label for="localidade">Localidade</label>
+				<input
+					type="text"
+					class="form-control"
+					name="localidade"
+					[(ngModel)]="card.localidade"
+				/>
+			</div>
+			<br />
+			<div class="col-auto">
+				<label for="descricao">Descrição</label>
+				<input
+					type="text"
+					class="form-control"
+					name="descricao"
+					[(ngModel)]="card.descricao"
+				/>
+			</div>
+			<br />
+			<div class="col-auto">
+				<label for="horarioFuncionamento">Horário de Funcionamento</label>
+				<input
+					type="text"
+					class="form-control"
+					name="horarioFuncionamento"
+					[(ngModel)]="card.horarioFuncionamento"
+				/>
+			</div>
+			<br />
+			<div class="col-auto">
+				<button
+					type="button"
+					class="btn btn-primary mb-3"
+					(click)="cadastrar()"
+				>
+					Cadastrar
+				</button>
+			</div>
+		</form>
+	</section>
+</main>
+
