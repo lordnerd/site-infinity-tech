@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginService } from '../login.service';
+
 
 @Component({
   selector: 'app-portal',
@@ -8,17 +8,13 @@ import { LoginService } from '../login.service';
 })
 export class PortalComponent implements OnInit {
 
-	mostrarMenu: boolean = true;
 
-	constructor(private _loginService: LoginService) {}
+
+	constructor() {}
 
 	ngOnInit() {
-		this._loginService.getMostraMenu().subscribe((res) => {
-			this.mostrarMenu = res;
-		});
+
 	}
-	ngOnDestroy() {
-		localStorage.clear();
-	}
+
 
 }

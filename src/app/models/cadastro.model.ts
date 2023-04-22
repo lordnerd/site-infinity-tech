@@ -1,6 +1,6 @@
 export class Cadastro{
 	id: number = 0;
-	cnpj: number = 0;
+	cnpj: string = '';
 	nomeFantasia: string = '';
 	nomeResponsavel: string = '';
 	nomeOng: string = '';
@@ -13,7 +13,7 @@ export class Cadastro{
 
 	constructor(
 	id: number,
-	cnpj: number,
+	cnpj: string,
 	nomeFantasia: string,
 	nomeResponsavel: string ,
 	nomeOng: string ,
@@ -21,7 +21,7 @@ export class Cadastro{
 	telefone: string,
 	endereco: string,
 	senha: string,
-	confirmaSenha: string
+	confirmaSenha: string,
 	){
 		this.id = id;
 		this.cnpj = cnpj;

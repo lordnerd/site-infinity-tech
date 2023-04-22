@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { LoginService } from 'src/app/login.service';
 import { Card } from 'src/app/models/card.model';
-import { CardService } from 'src/app/card.service';
+import { CardService } from 'src/app/services/card.service';
 
 @Component({
   selector: 'app-lista-servico',
@@ -17,12 +16,11 @@ export class ListaServicoComponent implements OnInit {
 	constructor(
 		private _cardService: CardService,
 		private router: Router,
-		private _loginService: LoginService
+
 	) {}
 
 	ngOnInit(): void {
 		this.listarServicos();
-			this._loginService.setMostraMenu(false);
 	}
 
 	listarServicos(): void {

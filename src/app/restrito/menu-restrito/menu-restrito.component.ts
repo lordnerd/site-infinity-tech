@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { LoginService } from 'src/app/login.service';
+
 
 @Component({
   selector: 'app-menu-restrito',
@@ -9,11 +9,10 @@ import { LoginService } from 'src/app/login.service';
 })
 export class MenuRestritoComponent{
 
-  constructor(private router: Router, private _loginService: LoginService) {}
+  constructor(private router: Router) {}
 
 	logout() {
 		localStorage.clear();
-		this._loginService.setMostraMenu(true);
 		this.router.navigate(['/login']);
 	}
 }

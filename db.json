@@ -54,5 +54,46 @@
       "descricao": "Oferecemos serviço de pediatria infantil gratuito em Recife",
       "horarioFuncionamento": "Horário de Funcionamento: 07:00 às 22:00"
     }
+  ],
+  "cadastros": [
+    {
+      "id": 1,
+      "cnpj": 0,
+      "nomeFantasia": "Gg",
+      "nomeResponsavel": "Gg",
+      "nomeOng": "GG",
+      "servicoOferecido": "Sei la",
+      "email": "uj@gmail.com",
+      "telefone": "81 9888888888",
+      "endereco": "Rua X, Nº X",
+      "senha": "1234",
+      "confirmaSenha": "1234"
+    },
+    {
+      "id": 2,
+      "cnpj": "22.222.222/0001-22",
+      "nomeFantasia": "HEALTH CARE",
+      "nomeResponsavel": "HEALTH CARE",
+      "nomeOng": "HEALTH CARE",
+      "servicoOferecido": "Cardiologia",
+      "email": "healthcare@email.com",
+      "telefone": "81 9888888888",
+      "endereco": "Rua 186, Jaboatão",
+      "senha": "123456",
+      "confirmaSenha": "123456"
+    },
+    {
+      "id": 3,
+      "cnpj": "33.333.333/0001-33",
+      "nomeFantasia": "FONO",
+      "nomeResponsavel": "FONO",
+      "nomeOng": "FONO",
+      "servicoOferecido": "Fonoaudiologia",
+      "email": "fono@email.com",
+      "telefone": "81 999999999",
+      "endereco": "Rua 40, Piedade",
+      "senha": "345678",
+      "confirmaSenha": "345678"
+    }
   ]
 }

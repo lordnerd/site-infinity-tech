@@ -26,10 +26,9 @@ import { CadastrarCardComponent } from './restrito/cadastrar-card/cadastrar-card
 import { ListaServicoComponent } from './restrito/lista-servico/lista-servico.component';
 import { MenuRestritoComponent } from './restrito/menu-restrito/menu-restrito.component';
 
-import { CardService } from './card.service';
+import { CardService } from './services/card.service';
 import { CadastroComponent } from './cadastro/cadastro.component';
-import { AtualizarCadastroComponent } from './cadastro/atualizar-cadastro/atualizar-cadastro.component';
-import { ListaCadastroComponent } from './cadastro/lista-cadastro/lista-cadastro.component';
+
 
 
 @NgModule({
@@ -47,8 +46,6 @@ import { ListaCadastroComponent } from './cadastro/lista-cadastro/lista-cadastro
     ListaServicoComponent,
     MenuRestritoComponent,
     CadastroComponent,
-    AtualizarCadastroComponent,
-    ListaCadastroComponent,
   ],
   imports: [
     BrowserAnimationsModule,

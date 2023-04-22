@@ -11,13 +11,17 @@
 					[(ngModel)]="cadastro.cnpj"
 				/>
 
-				<label for="telefone">Telefone</label>
+				<br>
+
+				<label for="email">E-mail</label>
 				<input
 					type="text"
 					class="form-control"
-					name="telefone"
-					[(ngModel)]="cadastro.telefone"
+					name="email"
+					[(ngModel)]="cadastro.email"
 				/>
+
+
 			</div>
 			<br />
 			<div class="col-auto">
@@ -29,16 +33,8 @@
 					[(ngModel)]="cadastro.nomeFantasia"
 				/>
 
-				<label for="endereco">Endereço</label>
-				<input
-					type="text"
-					class="form-control"
-					name="endereco"
-					[(ngModel)]="cadastro.endereco"
-				/>
-			</div>
-			<br />
-			<div class="col-auto">
+				<br>
+
 				<label for="sede">Nome Responsável</label>
 				<input
 					type="text"
@@ -46,6 +42,52 @@
 					name="nomeResponsavel"
 					[(ngModel)]="cadastro.nomeResponsavel"
 				/>
+		</div>
+			<br />
+			<div class="col-auto">
+
+				<label for="nomeOng">Nome da Ong</label>
+				<input
+					type="text"
+					class="form-control"
+					name="nomeOng"
+					[(ngModel)]="cadastro.nomeOng"
+				/>
+
+
+
+				<br>
+
+				<label for="servicoOferecido">Serviço Oferecido</label>
+				<input
+					type="text"
+					class="form-control"
+					name="servicoOferecido"
+					[(ngModel)]="cadastro.servicoOferecido"
+				/>
+			</div>
+			<br />
+			<div class="col-auto">
+
+				<label for="endereco">Endereço</label>
+				<input
+					type="text"
+					class="form-control"
+					name="endereco"
+					[(ngModel)]="cadastro.endereco"
+				/>
+
+				<br>
+
+				<label for="telefone">Telefone</label>
+				<input
+					type="text"
+					class="form-control"
+					name="telefone"
+					[(ngModel)]="cadastro.telefone"
+				/>
+
+				<br>
 
 				<label for="senha">Senha</label>
 				<input
@@ -54,16 +96,11 @@
 					name="senha"
 					[(ngModel)]="cadastro.senha"
 				/>
+
 			</div>
 			<br />
 			<div class="col-auto">
-				<label for="nomeOng">Nome da Ong</label>
-				<input
-					type="text"
-					class="form-control"
-					name="nomeOng"
-					[(ngModel)]="cadastro.nomeOng"
-				/>
+
 				<label for="confirmaSenha">Confirmar Senha</label>
 				<input
 					type="password"
@@ -73,29 +110,12 @@
 				/>
 			</div>
 			<br />
-			<div class="col-auto">
-				<label for="servicoOferecido">Serviço Oferecido</label>
-				<input
-					type="text"
-					class="form-control"
-					name="servicoOferecido"
-					[(ngModel)]="cadastro.servicoOferecido"
-				/>
-
-				<label for="email">E-mail</label>
-				<input
-					type="text"
-					class="form-control"
-					name="email"
-					[(ngModel)]="cadastro.email"
-				/>
-			</div>
-			<br />
-			<div class="col-auto">
+			<div class="col-auto" style="display: flex; gap: 10px;">
 				<button
 					type="button"
 					class="btn btn-primary mb-3"
-					(click)="cadastrarUsuario()"
+					(click)="cadastrar()"
+					routerLink="/login"
 				>
 					Cadastrar
 				</button>

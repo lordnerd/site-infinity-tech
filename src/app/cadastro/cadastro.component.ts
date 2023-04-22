@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { CadastroService } from '../services/cadastro.service';
 import { Cadastro } from '../models/cadastro.model';
-import { CadastroService } from '../cadastro.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-cadastro',
@@ -10,7 +11,8 @@ import { CadastroService } from '../cadastro.service';
 })
 export class CadastroComponent implements OnInit {
 
-  public cadastro: Cadastro = new Cadastro(0, 0, "","","", "", "", "", "", "");
+
+	public cadastro: Cadastro = new Cadastro(0, "","","","","","","","","");
 
   constructor(
 		private _cadastroService: CadastroService,
@@ -21,10 +23,10 @@ export class CadastroComponent implements OnInit {
 
 	}
 
-  cadastrarUsuario():void{
+  cadastrar():void{
 		this._cadastroService.cadastrarUsuario(this.cadastro).subscribe(
 		  _cadastro =>{
-				this.cadastro = new Cadastro(0, 0, "","","", "", "","", "", "");
+				this.cadastro = new Cadastro(0, "", "","","", "", "","","","");
 				alert("Cadastro Efetuado com Sucesso")
 			},
 			_err => {
@@ -33,7 +35,9 @@ export class CadastroComponent implements OnInit {
 		);
 
 
-	this.router.navigate(["/cadastro/lista-cadastro"]);
+	this.router.navigate(["/login"]);
 
  }
-}
+
+ }
+

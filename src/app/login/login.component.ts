@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginService } from '../login.service';
 import { Router } from '@angular/router';
+import { AuthServiceService } from '../services/auth-service.service';
 
 @Component({
   selector: 'app-login',
@@ -9,17 +9,14 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  usuario!: string;
-	senha!: string;
+	login:{email:string, cnpj?:string, senha:string} = {email: '', cnpj: '', senha: ''}
 
-	constructor(private _loginService: LoginService, private _router: Router) {}
+	constructor(private _AuthServiceService: AuthServiceService, private _router:Router) {}
 
 	ngOnInit(): void {}
 
-	fazerLogin() {
-		this._loginService.login(this.usuario, this.senha);
-		this._router.navigate(['/restrito/lista']);
-		this._loginService.setMostraMenu(false);
+	submit(){
 
+	}
 }
-}
+
