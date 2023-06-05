@@ -11,8 +11,8 @@ main{
 }
 
 mat-toolbar{
-  background-color: #3F51B5;
-  height: 156px;
+  background-color: #15CBCA;
+  height: 100px;
 }
 
 img{
@@ -90,6 +90,7 @@ a{
 .prestacao-servicos > h1{
   padding-top: 90px;
   text-align: center;
+	margin-right: 40px;
   font-family: 'Segoe UI';
   font-weight: bold;
   font-size: 60px;

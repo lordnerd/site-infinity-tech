@@ -2,9 +2,6 @@
 	<h1>Atualiza card</h1>
 	<section id="section-cadastro">
 		<form *ngIf = "card">
-			<label for="card">Id</label>
-			<input type="text" class="form-control" name="id" [(ngModel)]="card.id" readonly/>
-			<br />
 			<label for="servico">Serviço oferecido</label>
 			<input type="text" class="form-control" name="servico" [(ngModel)]="card.servico"/>
 			<br />

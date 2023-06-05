@@ -12,14 +12,14 @@ export class CardComponent implements OnInit {
 
 	public cards: Card[] = [];
 
-	constructor(private _cardService: CardService){}
+	constructor(private cardService: CardService){}
 
 	ngOnInit(): void {
 			this.listarCards()
 	}
 
 	listarCards(): void{
-		this._cardService.getCards().subscribe((retornaCard) => {
+		this.cardService.getCards().subscribe((retornaCard) => {
 			this.cards = retornaCard.map((item) => {
 				return new Card(
 					item.id,

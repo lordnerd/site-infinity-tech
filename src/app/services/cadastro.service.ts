@@ -9,7 +9,7 @@ import { Cadastro } from '../models/cadastro.model';
 
 export class CadastroService {
 
-	private url = 'http://localhost:3000/cadastros';
+	private url = 'api/cadastro';
 
 	constructor(private _httpClient: HttpClient) {}
 
@@ -24,15 +24,5 @@ export class CadastroService {
 
 	cadastrarUsuario(cadastro: Cadastro): Observable<Cadastro[]> {
 		return this._httpClient.post<Cadastro[]>(this.url, cadastro);
-	}
-
-	atualizarUsuario(id: any, cadastro: Cadastro): Observable<Cadastro[]> {
-		const urlAtualizar = `${this.url}/${id}`;
-		return this._httpClient.put<Cadastro[]>(urlAtualizar, cadastro);
-	}
-
-	removerUsuario(id: any): Observable<Cadastro[]> {
-		const urlDeletar = `${this.url}/${id}`;
-		return this._httpClient.delete<Cadastro[]>(urlDeletar);
 	}
 }

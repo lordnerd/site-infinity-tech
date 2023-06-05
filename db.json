@@ -53,6 +53,15 @@
       "localidade": "Prazeres",
       "descricao": "Oferecemos serviço de pediatria infantil gratuito em Recife",
       "horarioFuncionamento": "Horário de Funcionamento: 07:00 às 22:00"
+    },
+    {
+      "id": 7,
+      "servico": "Cardiologia",
+      "dataCriacao": "Criado em: 18/04/2023",
+      "sede": "TERAPIA",
+      "localidade": "Jaboatão dos Guararapes",
+      "descricao": "Oferecemos serviço de terapia gratuito em Recife",
+      "horarioFuncionamento": "Horário de Funcionamento: 07:00 às 22:00"
     }
   ],
   "cadastros": [
@@ -94,6 +103,19 @@
       "endereco": "Rua 40, Piedade",
       "senha": "345678",
       "confirmaSenha": "345678"
+    },
+    {
+      "id": 4,
+      "cnpj": "44.444.444/0001-44",
+      "nomeFantasia": "ANIMALS CARE",
+      "nomeResponsavel": "ANIMALS CARE",
+      "nomeOng": "ANIMALS CARE",
+      "servicoOferecido": "Medicina Veterinária",
+      "email": "animalscare@email.com",
+      "telefone": "81 982224424",
+      "endereco": "Rua 2469",
+      "senha": "678901",
+      "confirmaSenha": "678901"
     }
   ]
 }

@@ -9,11 +9,11 @@ import { Card } from '../models/card.model';
 
 export class CardService {
 
-	private url = 'http://localhost:3000/cards';
+	private readonly url = 'api/cards';
 
 	constructor(private _httpClient: HttpClient) {}
 
-	getCard(id: any): Observable<Card> {
+	getCard(id: number): Observable<Card> {
 		const urlAtualizar = `${this.url}?id=${id}`;
 		return this._httpClient.get<Card>(urlAtualizar);
 	}
@@ -26,12 +26,12 @@ export class CardService {
 		return this._httpClient.post<Card[]>(this.url, card);
 	}
 
-	atualizarCard(id: any, card: Card): Observable<Card[]> {
+	atualizarCard(id: number, card: Card): Observable<Card[]> {
 		const urlAtualizar = `${this.url}/${id}`;
 		return this._httpClient.put<Card[]>(urlAtualizar, card);
 	}
 
-	removerCard(id: any): Observable<Card[]> {
+	removerCard(id: number): Observable<Card[]> {
 		const urlDeletar = `${this.url}/${id}`;
 		return this._httpClient.delete<Card[]>(urlDeletar);
 	}
