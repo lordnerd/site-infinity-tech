@@ -1,0 +1,21 @@
+.table{
+	margin-left: 20px;
+	width: 1800px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992){
+	.table{
+		width: 1820px;
+	}
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.table{
+		width: 1900px;
+	}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1839px) {
+	.table{
+		width: 1880px;
+	}
+}

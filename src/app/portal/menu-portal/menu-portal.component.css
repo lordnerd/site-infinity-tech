@@ -16,12 +16,55 @@ img{
   width: 50px;
 }
 
-span{
-  padding: 8px;
+
+
+span > p{
+	font-family: 'Segoe UI';
+	font-size: 24px;
+	margin-left: 580px;
+	color: white;
 }
 
-a{
-  text-decoration: none;
-  color: white;
+
+
+/*Seção Media Query*/
+@media only screen and (min-width: 360px) and (max-width: 768px){
+	
+}
+@media only screen and (min-width: 576px) and (max-width: 768px){
+	mat-toolbar{
+		width: 1610px;
+	}
+
+	span > p{
+		margin-left: 500px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	mat-toolbar{
+		width: 1610px;
+	}
+
+	span > p{
+		margin-left: 550px;
+	}
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+	mat-toolbar{
+		width: 1800px;
+	}
+
+	span > p{
+		margin-left: 600px;
+	}
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1839px){
+	mat-toolbar{
+		width: 1870px;
+	}
+
+	span > p{
+		margin-left: 600px;
+	}
+}

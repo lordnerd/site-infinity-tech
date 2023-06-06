@@ -5,9 +5,79 @@
 	gap: 10px;
 }
 
+.cards{
+	margin-top: 100px;
+	margin-left: 200px;
+}
 .example-card {
   width: 453.33px;
 	min-height: 294.71px;
 	margin-left: 8px;
 }
+
+footer{
+	background: #15CBCA;
+	color: white;
+	text-align: center;
+	text-decoration: underline;
+	height: 100px;
+	padding-top: 30px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+	#section-rodape{
+		margin-top: 800px;
+	}
+
+	footer{
+		width: 1610px;
+	}
+
+	.cards{
+		margin-left: 100px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	#section-rodape{
+		margin-top: 500px;
+	}
+
+	footer{
+		width: 1610px;
+	}
+
+	.cards{
+		margin-left: 100px;
+	}
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+	#section-rodape{
+		margin-top: 400px;
+	}
+
+	footer{
+		width: 1800px;
+	}
+
+	.cards{
+		margin-left: 200px;
+	}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1839px) {
+	#section-rodape{
+		margin-top: 400px;
+	}
+
+	footer{
+		width: 1870px;
+	}
+
+	.cards{
+		margin-left: 200px;
+	}
+}
+
 

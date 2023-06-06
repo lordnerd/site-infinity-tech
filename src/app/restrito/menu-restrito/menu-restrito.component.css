@@ -24,3 +24,43 @@ a{
   text-decoration: none;
   color: white;
 }
+
+.button{
+	border-radius: 60px;
+	background-color: #15CBCA;
+	color: white;
+	margin-left: 1250px;
+}
+@media only screen and (min-width: 576px) and (max-width: 768px){
+	mat-toolbar{
+		width: 1850px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	mat-toolbar{
+		width: 1820px;
+	}
+
+	.button{
+		margin-left: 1200px;
+	}
+}
+@media only screen and (min-width: 992px) and  (max-width: 1200px){
+	mat-toolbar{
+		width: 1900px;
+	}
+
+	.button{
+		margin-left: 1300px;
+	}
+}
+
+@media only screen and (min-width: 1200px) and  (max-width: 1839px){
+	mat-toolbar{
+		width: 1880px;
+	}
+
+	.button{
+		margin-left: 1300px;
+	}
+}
